@@ -1,0 +1,39 @@
+HTTP
+
+
+- request
+  - Components
+    - HTTP verb/method
+    - URL
+    - parameters
+
+  - GET
+    - a link or type into address bar
+    - parameters exposed in URL
+    - smaller payload
+
+  - POST
+    - forms
+    - parameters submitted in body
+    - larger payload
+
+
+
+- response
+  - Components
+    - status code
+    - payload (usually HTML)
+
+  - status code
+    - 200: ok
+    - 302: redirect
+    - 404: file not found
+    - 500: general error
+
+
+- HTTP is stateless
+
+
+
+
+
