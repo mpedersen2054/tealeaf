@@ -1,7 +1,7 @@
 What is HTML? What is CSS? What is Javascript?
-HTML- Hypertext Markup Language
-CSS - Cascading Styling Sheets
-JS  -
+HTML- Hypertext Markup Language -- structured semantic markup
+CSS - Cascading Styling Sheets -- handles the presentation of html
+JS  - client side programming language. Can now be used on the server-side with technologies like node.js
 
 What are the major parts of an HTTP request?
 HTTP request method, the URI, and the protocol version 
