@@ -1,0 +1,9 @@
+When the player starts a new game, there should be some amount that the player starts with. 
+
+Before the start of each hand, the player should be asked an amount to bet.
+This amount should not be 0 and should not be more than what the player has. 
+
+The bet amount should be added or subtracted from the total depending on if the player won or lost. 
+
+When the player has no more money, he should not be allowed to play another hand.
+

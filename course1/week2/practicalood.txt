@@ -1,0 +1,24 @@
+Classes
+=======
+- a class should do the smallest possible useful thing; should have single responsibility
+
+= example = bycicles =
+- when in lower gear, you can pedal many times to make the tire rotate just once
+- when in higher gear, you can pedal once to make the tire go around once
+- to represent this:
+	
+	chainring = 52      # the number of 'teeth'
+	cog = 11
+	ratio = chainring / cog.to_f
+	ratio = 4.73
+	- so the tire rotates almost 5 times for each revolution of petal
+
+	chainring = 30
+	cog = 27
+	ratio = chainring / cog.to_f
+	ratio = 1.11
+	- so the tire rotates about 1 time for each revolution of petal
+
+= end example =
+
+- make sure a class a only a single responsibility

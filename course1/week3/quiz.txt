@@ -1,0 +1,65 @@
+What is HTML? What is CSS? What is Javascript?
+HTML- Hypertext Markup Language -- structured semantic markup
+CSS - Cascading Styling Sheets -- handles the presentation of html
+JS  - client side programming language. Can now be used on the server-side with technologies like node.js
+
+What are the major parts of an HTTP request?
+HTTP request method, the URI, and the protocol version 
+HTTP request headers - used to communicate information about the client env
+HTTP request body - contains the actual request being sent
+
+
+What are the major parts of an HTTP response?
+Protocol, status code, and its depreciation ( ex of status code is 404 error )
+HTTP response headers - similair to request header, but contains info about server env
+HTTP response body - rendered in the clients browser
+
+How do you submit an HTTP POST request, with a "username" attribute set to "bob"? What if we wanted a GET request instead?
+POST /username/bob HTTP/1.0
+GET /username/bob HTTP/1.0
+
+Why is it important for us, as web developers, to understand that HTTP is a "stateless" protocol?
+On the internet, each time the user wants to change something, there is a request sent to the server and a response sent back from the server
+with the changes. So the server does not track state over multipul requests.
+
+
+If the internet is just HTTP requests/responses, why do we only use browsers to interface with web applications? Are there any other options?
+The browser is the program that is able to render the html and css and whatever other code that the client recieves from a server response. Some other
+tools are wget and HTTP Client(mac only)
+
+What is MVC, and why is it important?
+Model - persistence
+View - rendering the visual aspect of an application
+Controller - handles routing
+
+MVC keeps code that does seperated and easy to maintain.
+
+------------------------------------------------------------------
+
+
+The below questions are about Sinatra:
+
+
+At a high level, how are requests processed?
+using the http verb as a method and the action inbetween a block as so ->
+get '/' do
+  erb :example
+end
+
+In the controller/action, what's the difference between rendering and redirecting?
+rendering runs code for that particular URI whereas with a redirect it sends you to another route and runs that code instead
+
+In the ERB view template, how do you show dynamic content?
+<%= something.blah %>  -- to output something
+<% if something %> -- to do some logic but not output it to the template, good for adding ruby conditions to front-end output
+
+Given what you know about ERB templates, when do you suppose the ERB template is turned into HTML?
+after the client sends request with their particular info, then the server renders the erb and sends html to client
+
+What's the role of instance variables in Sinatra?
+instance vars set in route handlers are directly accessible to templates
+
+
+
+
+

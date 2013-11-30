@@ -1,0 +1,25 @@
+- adding references:something to the generator arguement for a model will add a belongs_to :something in the newly generated model.
+- In the migration t.references sets up a foreign key column for the association between the 2 models
+
+- Now with belongs_to :post in Comment model, and has_many :comments in Post model, gives alot of automatic behavior. For example, if you have an instance variable @post containing a post, you can retrieve all the comments belonging to that post as an array using @post.comments
+
+- Now there nees to be a route for comments in the routes.rb file.
+- it should look like this : 
+    resources :posts do
+      resources :comments
+    end
+
+- Now in the posts/show.html.erb you need to add a new form_for that allows a visitor to comment on the page. Looks like this :
+
+<%= form_for([@post, @post.comments.build]) do |f| %>
+
+- inside this it looks like usual form... f.label :commentor ...etc..
+
+- add the comments to the show page
+
+- probably should make partials in comments/_form comments_comment
+
+- create the create and destroy methods in comments_controller
+
+SIMPLE AUTHENTICATION
+- use http_basic_authenticate_with method in posts_controller

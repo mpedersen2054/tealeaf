@@ -1,0 +1,65 @@
+- lots of layers of technologies
+- and how the different layers integrate with each other
+
+Things web developers must be aware of:
+- best practices
+- security concerns
+- browser compatibility
+- mobile operating systems
+
+--------> FRONTEND
+- javascript
+  - frameworks
+  - MVC
+  - ajax
+  - coffeescript
+
+- HTML
+  - erb
+  - haml
+
+- CSS
+  - sass
+
+- mobile
+  - responsive design
+
+
+---------> MIDDLEWARE (commonly refered to as 'server side'code)
+- APIs
+- URLs
+- REST
+- request/response processing
+- security
+  - (xss, crsf, code injection, ect..)
+
+
+----------> BACKEND
+- database
+  -relational
+    - sql
+  -nosql
+    - mongodb
+
+
+----------> WEB SERVICES
+- REST
+- SOAP
+
+----------> MISC
+- deployment
+- background processing
+- git
+- bundler
+- rvm (rbenv for me)
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,26 @@
+1) local var, fixnum object with value 1
+instance var, with fixnum object 2
+local var, with newly instantiated User object
+getter method (name) called on the user local var
+setter method (name) called on the user local var
+
+2) include Modulename -- at top of class declaration
+
+3) class vars relate to the class itself, whereas instance vars
+relate to a single instance of an instantiation of a class
+
+4) creates getter and setter methods for whatever symbols you pass into it
+
+5) Calling a method called 'some method' on the dog class
+can also be described as self.some_method when defined within dog class
+
+6) You cannot instantiate a mixin, you can only add it to other classes,
+and with a subclassed class you can instantiate
+
+7)         def initialize(name)
+              @name = name
+           end
+8) yes
+
+9) put binding.pry at the end, and try recreated the variables
+  to try to pin point which/where the problem is

@@ -1,0 +1,8 @@
+############ DEPENDENCIES #############
+
+# 
+An object depends on another object if, when one object changes, the other might be fored to change in turn
+
+# An object has a dependency when it knows...
+- the name of another class
+- the name of a msessage that it intends to send to someone other than self

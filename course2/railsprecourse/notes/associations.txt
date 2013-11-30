@@ -1,0 +1,28 @@
+- belongs_to
+- has_one
+- has_many
+- has_many :through
+- has_one :through
+- has_and_belongs_to_many
+
+belongs_to
+= sets up a one-to-one connection with another model, such that each instance of the declaring model "belongs to" one instance of the other model
+
+has_one
+= sets up a one-to-one connection with another model
+= indicates that each instance of a model contains or possesses one instance of another model
+
+has_many
+= indicates a one-to-many connection with another model
+= usually on 'the other side' of a belongs_to association
+
+has_many :through
+= many-to-many connection with another model
+= declares a model can have a zero or more relations with another model by preceeding THROUGH a third model
+
+has_one :through
+= one-to-one connection with another model
+= indicates that the declaring model can be matched with one instance of another model by proceeding THROUGH a third model
+
+has_and_belongs_to_many
+= creates a many-to-many relationship with no intervening model
