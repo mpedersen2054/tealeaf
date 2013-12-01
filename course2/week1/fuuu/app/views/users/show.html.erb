@@ -1,0 +1,35 @@
+<h1><%= @user.name_profile %></h1>
+
+<p>
+  <strong>FIRST NAME:</strong>
+  <br>
+  <%= @user.name_first %>
+</p>
+
+<p>
+  <strong>LAST NAME:</strong>
+  <br>
+  <%= @user.name_last %>
+</p>
+
+<p>
+  <strong>AGE:</strong>
+  <br>
+  <%= @user.age %>
+</p>
+
+<p>
+  <strong>EMAIL:</strong>
+  <br>
+  <%= @user.email %>
+</p>
+
+<p>
+  <strong>BIO:</strong>
+  <br>
+  <%= @user.bio %>
+</p>
+
+<br>
+
+<%= link_to "Back to all Users", users_path %>
