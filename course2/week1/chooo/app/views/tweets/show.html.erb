@@ -1,18 +1,18 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Title:</strong>
+  <strong>TITLE:</strong>
   <%= @tweet.title %>
 </p>
 
 <p>
-  <strong>Content:</strong>
+  <strong>CONTENT:</strong>
   <%= @tweet.content %>
 </p>
 
 <p>
-  <strong>User:</strong>
-  <%= @tweet.user_id %>
+  <strong>POSTER:</strong>
+  <%= link_to @tweet.user.name_profile, user_path(@tweet.user) %>
 </p>
 
 <%= link_to 'Edit', edit_tweet_path(@tweet) %> |

@@ -1,0 +1,23 @@
+<%= f.text_area :bio %>
+  gives big text area
+<%= f.check_box :rotting %>
+  useful for booleans
+<%= f.radio_button :rotting %>
+  select many
+<%= f.select :decomp %>
+  select many
+
+alternative text input types
+<%= f.passoword_field :password %>
+  makes password characters hidden
+<%= f.number_field :price %>
+  nice little box for picking numbers
+<%= f.range_field :quantity %>
+  a slider - small ball on a horizontal axis
+<%= f.email_field :email %>
+  mostly for mobile
+<%= f.url_field :email %>
+  mostly for mobile
+<%= f.telephone_field :email %>
+  mostly for mobile
+

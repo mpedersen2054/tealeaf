@@ -1,0 +1,24 @@
+The Command Palette
+- shift + command + p : is basically the command bar with fuzy search. So can type in 'syntax ruby' to change the syntax highlighting to Ruby, or 'sidebar' to toggle the sidebar.
+
+Instant File Changing
+- command + p : allows you to fuzy search through files. Already use this alot.
+
+Symbols
+- command + r : allows you to search through cd to search for certain symbols(methods, classes....)
+
+KEYBINDINGS
+- Ctrl + /  :  comment current line, toggle
+
+- when writing a method can use snippet, type def then hit tab. can keep pressing tab to cycle through entry points
+
+- Ctrl + Shift + w  :  creates opening and closing tags (html)
+
+Emmet ~*~**~
+- in css, just press p10 + tab and it will exand as padding: 10px;
+- margin m15 + tab
+- w = width
+- put a '-' before defining a css3 attr, and then press tab and it will give you the -webkit-border...-moz-border...-o-border..
+
+lorem200 will create 200 words of lorem ipsum
+

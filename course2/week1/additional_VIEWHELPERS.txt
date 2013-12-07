@@ -1,0 +1,71 @@
+div_for -
+<% @tweets.each do |t| %>
+  <%= div_for tweet do %>
+    <%= tweet.body %>
+  end
+end
+
+html that div_for produces:
+<% @tweets.each do |t| %>
+  <div id="tweet_<%= tweet.id %>" class="tweet">
+    <%= tweet.body %>
+  </div>
+<% end %>
+
+truncate -
+<%= truncate("I need brain!", length: 10) %>
+  returns "I need bra"
+  - can pass in option argument: separator => ''
+    - this would make it return everything to nearest space(so 
+      it would return "I need brains")
+
+pluralize -
+  <%= pluralize(Zombie.count, "zombie") %>
+    - returns the dynamic elements pluralization number, ex 3rd 4th ...
+
+titleize -
+  His name was <%= titleize(zombie.name) %>
+    returns Ashe Williams
+
+to_sentence -
+  Ashe's zombie roles are <%= @role_name.to_sentence %>
+    returns: Ashe's zombie roles are Captain, Soldier, and Brain Taster.
+
+time_ago_in_words - 
+  He was buried alive <%= time_ago_in_words(@zombie.created_at) %>
+    He was buried alive 2 days ago.
+
+number_to_currency -
+  Price is <%= number_to_currency 13.5 %>
+    Price is $13.50
+
+number_to_human
+  Ashe is <%= number_to_human 1323131231 %> years old
+    Ashe is 13.2 billion years old
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

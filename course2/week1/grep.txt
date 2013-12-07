@@ -1,0 +1,17 @@
+            Pattern
+               v
+grep   -i     pat     *.c
+       ^               ^
+     Options        Filename
+
+
+
+grep Options
+-i : Ignores case for matching *&~
+-v : Doesn't display line matching expression
+-n : displays line numbers along with lines
+-c : Displays count of numbers of occurences
+-l : Displays list of filenames only
+-e exp : Can be used multipul times. Also used for expression beginning with a hypen
+-x : Matches pattern with entire line
+-f file : Takes patterns from a file, one per line

@@ -1,0 +1,74 @@
+1)
+  because you can create tables that each represent a different object, and you can create relationships between the differen't tables through the use of foreign keys.
+2)
+  Server Query Language : used to manage data in a database
+3)
+  read-only, and updatable.
+  read-only is a get verb
+  updatable is a put, patch, post, and destroy verbs
+4)
+  the primary key
+5)
+  they are used on the table pertaining to the class stated as 'has_many' and serves as an index for relations.
+  ex. class Book has_many :pages, class Page belongs_to :book
+  in example the foreign key goes in the 'pages' table of the db
+6)
+  create an object, update it,or delete it.
+  the db table is wrapped in a class, an object instance is tied to a single row of db table.
+7)
+  crazy_monkies
+8)
+  project 1:M issues
+  class Project has_many :issues
+  class Issue belongs_to :project
+  the foreign key would go in the 'issues' table
+9)
+  class Animal belongs_to :zoo
+  zoo.animals  ---- animal.zoo
+  a = Animal.create(name: "jumpster")
+  a.zoo = "San Diego Zoo"
+10)
+  mass assignment allows us to set a bunch of attributes at once
+  use attr_accessible to allow only specified fields to be mass assigned
+
+11)
+  selects the first Animal object in the database. If not assigning to variable it will just output the db row
+
+12)
+  Animal.create(name: "Joe")
+  .save makes sure it saves in db
+13)
+  you need to have a joining model and table. The joining table stores the primary keys of the 2 db you are trying to create a relationship for as foreign keys.
+14)
+  has_many_and_belongs_to
+    - no intervening model(for simplicity)
+    - should use more when working with legacy code
+
+  has_many through:
+    - more commonly used
+    -can get consufing with a bunch of 3rd joining model/tables
+15)
+  u = User.first; g = Group.first
+  u.groups << g
+  u.save
+
+  g.users << u
+  g.save
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

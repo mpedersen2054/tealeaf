@@ -17,7 +17,7 @@
       <tr>
         <td><%= tweet.title %></td>
         <td><%= tweet.content %></td>
-        <td><%= tweet.user_id %></td>
+        <td><%= link_to  tweet.user.name_profile, user_path(tweet.user) %></td>
         <td><%= link_to 'Show', tweet %></td>
         <td><%= link_to 'Edit', edit_tweet_path(tweet) %></td>
         <td><%= link_to 'Destroy', tweet, method: :delete, data: { confirm: 'Are you sure?' } %></td>
