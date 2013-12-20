@@ -1,0 +1,49 @@
+1)
+  when redirecting, you send the user to a new URI, with rendering you render a new template on the current page. rendering is usually used to show errors
+2)
+  put flash[:notice] or flash[:redirect] on the line above where you redirect
+3)
+  going off the example of showing errors related to validation, you want to add ruby code into your htmlerb <% if something %> do this or that. if the user enters invalid info, on the newly rendered template it will be displaying info that was contained within the <% if something %> block
+  or you can just use flash.now
+4)
+  you never want to store the actual pw into the db, you want to user to enter their password, which is then converted into a password_digest(string) which will then be associated via a hash with the actual password. When the user tries to log on, the info entered into the pw field will be compared with the pw_digest corresponding to the user and if they match, the user is authenticated
+5)
+  declare it as a helper_method
+6)
+  memoization is defining a method that may be used multipul times, but instead of having to run the method/funtion multipul times throughout your code, you can used store it in the memoized instance variable, so whenever its called multipul times in your code, it will return the value that was stored in the instance. Kind of similar to caching
+7)
+  define require_user(basically says !logged_in?) in app_contr and put a before action in comment with :create as its params
+
+8)
+  instead of having a column in the likes table for each of the likeable objects, you just have a column name likeable_type whose values will be a string of the liked item. There will also be another column for which the like's id will go
+9)
+  class Vote
+    belongs_to :voteable, polymorphic: true
+
+  class Post
+    has_many :votes, as: :voteable
+
+10)
+  ERD: Entity-Related Diagram
+  ERD's are usual for mapping out data, and how data related to eachother
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
